@@ -9,10 +9,12 @@
     <packaging>pom</packaging>
 
     <modules>
-        <!-- 基础模块 -->
+        <!-- 服务提供者 -->
         <module>springcloud-provider</module>
-        <!-- 各服务模块 -->
+        <!-- 服务消费者 -->
         <module>springcloud-consumer</module>
+        <!--网关服务-->
+        <module>springcloud-gateway</module>
     </modules>
 
     <properties>
