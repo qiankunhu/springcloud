@@ -1,6 +1,6 @@
 package com.hqk.springcloudconsumer.controller;
 
-import com.hqk.springcloudconsumer.removeclient.TestService;
+import com.hqk.springcloudconsumer.feignclient.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

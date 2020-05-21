@@ -1,18 +1,20 @@
-package com.hqk.springcloudconsumer.removeclient;
+package com.hqk.springcloudconsumer.feignclient;
 
+import com.hqk.springcloudconsumer.feignclient.fallback.TestServiceImpl;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @version V1.0
  * @author: hqk
  * @date: 2020/5/18 17:19
- * @Description:
+ * @Description:  feign 服务调用
  */
-@FeignClient("service-provider")
+@FeignClient(name="service-provider",fallback = TestServiceImpl.class)
 public interface TestService {
 
     @RequestMapping("hello")
     public String  getHello();
+
+
 }
