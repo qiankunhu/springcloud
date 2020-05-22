@@ -1,5 +1,7 @@
 package com.hqk.springcloudprovider.controller;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,11 +12,21 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description:
  */
 @RestController
+@RefreshScope //动态获取
 public class TestController {
+
+    @Value("${name}")
+    private String name;
 
     @RequestMapping("/hello")
     public String getHello(){
 
         return "hello";
+    }
+
+    @RequestMapping("/name")
+    public String name(){
+
+        return name;
     }
 }
