@@ -16,12 +16,12 @@ public class AppConstants {
     /**
      *  POST
      */
-    public static final String METHOD_POST = "ticket";
+    public static final String METHOD_POST = "POST";
 
     /**
      *  GET
      */
-    public static final String METHOD_GET = "ticket";
+    public static final String METHOD_GET = "GET";
 
     /**
      *  token 参数

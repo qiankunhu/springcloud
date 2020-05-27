@@ -15,8 +15,8 @@ public class SpringcloudGatewayApplication {
     }
 
 
-    @Bean
+   /* @Bean
     public UrlResolver urlResolver(){
         return new UrlResolver();
-    }
+    }*/
 }

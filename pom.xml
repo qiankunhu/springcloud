@@ -17,45 +17,6 @@
         <module>springcloud-gateway</module>
     </modules>
 
-    <properties>
-        <java.version>1.8</java.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    </properties>
-
-    <dependencyManagement>
-        <dependencies>
-        </dependencies>
-    </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                    <compilerVersion>${java.version}</compilerVersion>
-                    <encoding>${project.build.sourceEncoding}</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-            <!--热部署-->
-            <!--             <plugin> -->
-            <!--                 <groupId>org.springframework.boot</groupId> -->
-            <!--                 <artifactId>spring-boot-maven-plugin</artifactId> -->
-            <!--                 <configuration> -->
-            <!--                     <fork>true</fork> -->
-            <!--                 </configuration> -->
-            <!--             </plugin> -->
-        </plugins>
-    </build>
 
 
 </project>

@@ -2,6 +2,7 @@ package com.hqk.springcloudprovider.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,6 +23,13 @@ public class TestController {
     public String getHello(){
 
         return "hello";
+    }
+
+
+    @RequestMapping("/json")
+    public String getJson(@RequestBody String json){
+
+        return "这里是网关拦截传过来的json："+json;
     }
 
     @RequestMapping("/name")
