@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope //动态获取
 public class TestController {
 
-    @Value("${name}")
+    //@Value("${name}")
     private String name;
 
     @Autowired
@@ -45,6 +45,12 @@ public class TestController {
     public String name(){
 
         return name;
+    }
+
+    @RequestMapping("/updateUserName")
+    public String  updateUserName(String name){
+
+        return testService.updateUserName(name);
     }
 
     @RequestMapping("/userName")

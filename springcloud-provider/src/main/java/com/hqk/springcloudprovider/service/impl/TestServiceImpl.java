@@ -22,4 +22,16 @@ public class TestServiceImpl implements TestService {
         //System.out.println("qqqq");
         return testMapper.getTest();
     }
+
+    @Override
+    public String updateUserName(String name) {
+
+        /*try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }*/
+
+        return testMapper.updateUserName(name)+"";
+    }
 }

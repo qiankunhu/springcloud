@@ -11,12 +11,17 @@ import org.springframework.stereotype.Component;
  * @Description: 服务降级
  */
 @Slf4j
-@Component
-public class TestServiceImpl implements TestService {
+//@Component
+public class TestServiceImpl /*implements TestService*/ {
 
-    @Override
+   /* @Override
     public String getHello() {
         log.info("服务调用失败");
         return null;
     }
+
+    @Override
+    public String updateUserName(String name) {
+        return null;
+    }*/
 }

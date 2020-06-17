@@ -9,4 +9,6 @@ package com.hqk.springcloudprovider.service;
 public interface TestService {
     
     public String gettest();
+
+    public String updateUserName(String name);
 }

@@ -9,4 +9,6 @@ package com.hqk.springcloudprovider.mapper;
 public interface TestMapper {
 
     public String getTest();
+
+    public int updateUserName(String name);
 }
